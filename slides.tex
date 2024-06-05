@@ -1,0 +1,130 @@
+\documentclass{beamer}
+
+% Definições de cores
+\usepackage{xcolor}
+\definecolor{mygreen}{RGB}{0, 128, 0}
+
+% Configurações de tema e cor
+\usetheme{default}
+\setbeamercolor{title}{fg=mygreen}
+\setbeamercolor{frametitle}{fg=mygreen}
+\setbeamercolor{normal text}{fg=black, bg=white}
+
+% Configurações de fontes
+\setbeamerfont{title}{size=\LARGE}
+\setbeamerfont{frametitle}{size=\LARGE}
+\setbeamerfont{normal text}{size=\large}
+
+\begin{document}
+
+% Slide de título
+\begin{frame}
+    \title{OpenCV e NumPy}
+    \subtitle{Introdução e Funcionalidades}
+    \author{Luis Eduardo Lima}
+    \date{\today}
+    \titlepage
+\end{frame}
+
+% Slide sobre OpenCV
+\begin{frame}
+    \frametitle{O que é OpenCV?}
+    \begin{itemize}
+        \item OpenCV é uma biblioteca de visão computacional e processamento de imagem de código aberto.
+        \item Contém mais de 2500 algoritmos otimizados para uma ampla gama de tarefas.
+    \end{itemize}
+\end{frame}
+
+% Slide sobre Funcionalidades do OpenCV
+\begin{frame}
+    \frametitle{Funcionalidades do OpenCV}
+    \begin{itemize}
+        \item Processamento de Imagem: Filtros, transformações, manipulação de cores.
+        \item Análise de Vídeo: Captura de vídeo, processamento em tempo real, rastreamento de objetos.
+        \item Reconhecimento de Padrões: Detecção de faces, identificação de objetos, reconhecimento de texto.
+        \item Visão 3D: Estimação de movimento, reconstrução 3D, mapeamento estéreo.
+        \item Aprendizado de Máquina: Integração com modelos de aprendizado de máquina.
+    \end{itemize}
+\end{frame}
+
+% Slide sobre Implementação e Recursos do OpenCV
+\begin{frame}
+    \frametitle{Implementação e Recursos do OpenCV}
+    \begin{itemize}
+        \item Implementado principalmente em C++, com interfaces para Python, Java e MATLAB/OCTAVE.
+        \item \textbf{Site Oficial}: \url{https://opencv.org/}
+        \item \textbf{Documentação}: \url{https://docs.opencv.org/}
+        \item \textbf{GitHub}: \url{https://github.com/opencv/opencv}
+    \end{itemize}
+\end{frame}
+
+% Slide sobre NumPy
+\begin{frame}
+    \frametitle{O que é NumPy?}
+    \begin{itemize}
+        \item NumPy é uma biblioteca fundamental para computação científica em Python.
+        \item Fornece um objeto de array multidimensional de alta performance.
+    \end{itemize}
+\end{frame}
+
+% Slide sobre Funcionalidades do NumPy
+\begin{frame}
+    \frametitle{Funcionalidades do NumPy}
+    \begin{itemize}
+        \item Array Multidimensional: Estrutura de dados central de NumPy é o array N-dimensional, \texttt{ndarray}.
+        \item Funções Matemáticas: Suporta operações aritméticas e funções matemáticas complexas em arrays.
+        \item Álgebra Linear: Funções para decomposição de matrizes, sistemas lineares, transformações.
+        \item Transformações de Fourier: Implementações rápidas de transformações de Fourier.
+        \item Ferramentas Estatísticas: Cálculo de média, mediana, desvio padrão e outras funções estatísticas.
+    \end{itemize}
+\end{frame}
+
+% Slide sobre Implementação e Recursos do NumPy
+\begin{frame}
+    \frametitle{Implementação e Recursos do NumPy}
+    \begin{itemize}
+        \item Implementado em Python, com operações de baixo nível otimizadas em C.
+        \item \textbf{Site Oficial}: \url{https://numpy.org/}
+        \item \textbf{Documentação}: \url{https://numpy.org/doc/}
+        \item \textbf{GitHub}: \url{https://github.com/numpy/numpy}
+    \end{itemize}
+\end{frame}
+
+% Slide sobre Implementação Combinada
+\begin{frame}
+    \frametitle{Implementação Combinada}
+    \begin{itemize}
+        \item NumPy facilita a criação e manipulação de arrays.
+        \item OpenCV usa esses arrays para processar e analisar imagens.
+        \item \textbf{Exemplo}:
+        \begin{verbatim}
+import cv2
+import numpy as np
+
+lower_blue = np.array([100, 150, 50])
+upper_blue = np.array([140, 255, 255])
+        \end{verbatim}
+    \end{itemize}
+\end{frame}
+
+% Slide sobre Recursos Adicionais
+\begin{frame}
+    \frametitle{Recursos Adicionais}
+    \begin{itemize}
+        \item \textbf{Cursos Online}: Coursera, Udacity, edX, Udemy.
+        \item \textbf{Livros}: "Learning OpenCV" por Gary Bradski e Adrian Kaehler, "Python for Data Analysis" por Wes McKinney.
+        \item \textbf{Comunidade}: Stack Overflow, fóruns, grupos de estudo, conferências como PyCon.
+    \end{itemize}
+\end{frame}
+
+% Slide de conclusão
+\begin{frame}
+    \frametitle{Conclusão}
+    \begin{itemize}
+        \item OpenCV e NumPy são ferramentas poderosas para visão computacional e análise de dados científicos.
+        \item Utilizar essas bibliotecas pode simplificar e otimizar o desenvolvimento de projetos complexos.
+    \end{itemize}
+\end{frame}
+
+\end{document}
+
